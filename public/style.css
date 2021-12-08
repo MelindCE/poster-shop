@@ -366,3 +366,29 @@ body {
         display: none;
     }
 }
+
+.fade-enter {
+    opacity: 0;
+}
+
+.fade-enter-active {
+    transition: opacity 0.5s;
+}
+
+.fade-enter-to {
+   opacity: 1; 
+}
+
+/* hide it's children */
+[v-cloak] > *{       
+    display: none;
+}
+
+[v-cloak] > #loading {
+    display: block;
+    padding: 1em;
+}
+
+#loading {
+    display: none;
+}
